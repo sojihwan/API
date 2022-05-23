@@ -13,9 +13,10 @@ function Users(){
         setError(null);
         setLoading(true);
         const reponse = await axios.get(
-          'http://library.me.go.kr/pyxis-api/2/collections/2/search?all=k|a|library'
+          'https://corhttp://www.namdoskyview.or.kr/openapi/100/?kubun0=&kubun1=&group1=movie'
         );
         setUsers(reponse.data)
+        console.log(reponse.data)
       }catch (e){
          setError(e)
       }
@@ -30,10 +31,13 @@ function Users(){
 
 
 return (
-  <div>
-    {users.message}
-    {users.data.list[1].id}
-  </div>
+  <ul>
+    {users.map(user => (
+      <li key={user[0]}>
+        {user[1]},{user[2]}
+      </li>
+    ))}
+  </ul>
 )
 }
 

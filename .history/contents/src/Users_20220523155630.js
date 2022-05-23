@@ -32,7 +32,7 @@ function Users(){
 return (
   <div>
     {users.message}
-    {users.data.list[1].id}
+    {users.data.list}
   </div>
 )
 }

@@ -8,17 +8,15 @@ function Users(){
   
   useEffect(() => {
     const fetchUsers = async () => {
-      try{
+      
         setUsers(null);
         setError(null);
         setLoading(true);
-        const reponse = await axios.get(
-          'http://library.me.go.kr/pyxis-api/2/collections/2/search?all=k|a|library'
-        );
-        setUsers(reponse.data)
-      }catch (e){
-         setError(e)
-      }
+        const response = await axios.get(
+        'http://www.namdoskyview.or.kr/openapi/100/?kubun0=&kubun1=&group1=movie'
+      );
+      setUsers(response.data)
+      console.log(response.data)
       setLoading(false)
     };
     fetchUsers();
@@ -30,10 +28,13 @@ function Users(){
 
 
 return (
-  <div>
-    {users.message}
-    {users.data.list[1].id}
-  </div>
+  <ul>
+    {users.map(user => (
+      <li key={user.id}>
+        {user.username},{user.name}
+      </li>
+    ))}
+  </ul>
 )
 }
 

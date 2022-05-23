@@ -16,6 +16,7 @@ function Users(){
           'http://library.me.go.kr/pyxis-api/2/collections/2/search?all=k|a|library'
         );
         setUsers(reponse.data)
+        console.log(reponse.data)
       }catch (e){
          setError(e)
       }
@@ -30,10 +31,9 @@ function Users(){
 
 
 return (
-  <div>
-    {users.message}
-    {users.data.list[1].id}
-  </div>
+  <ul>
+    
+  </ul>
 )
 }
 

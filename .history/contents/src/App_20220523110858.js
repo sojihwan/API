@@ -1,4 +1,6 @@
-import Users from './Users.js';
+import logo from './logo.svg';
+import './App.css';
+import Users from '../';
 import React from 'react';
 
 function App() {

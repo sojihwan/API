@@ -1,0 +1,18 @@
+@media ( max-width: 767px ) {
+}
+  .Header{
+    height: 30%;
+    background-color: rgba(116, 198, 156, 0.486);
+    width: 100%;
+    position: fixed;
+    left: 0px;
+  top: 0px;
+}
+header{
+  text-align: center;
+  font-size: 100px;
+  color: rgb(55, 77, 59);
+}
+p{
+  margin-top: 40px;
+}

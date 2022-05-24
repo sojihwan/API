@@ -1,0 +1,8 @@
+.Header{
+  height: 30%;
+  background-color: darkblue;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}

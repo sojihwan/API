@@ -1,0 +1,21 @@
+.img{
+  width: 100px;
+  height: 150px;
+  background-color: rgba(61, 152, 55, 0.408);
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+.bookimg{
+  width: 100px;
+  height: 150px;
+}
+.Hidden{
+  
+}
+.booktitle{
+  font-size: 5px;
+  width: 100px;
+  height: 10px;
+  overflow: hidden;
+}

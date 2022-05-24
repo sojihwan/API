@@ -1,0 +1,14 @@
+.img{
+  width: 150px;
+  height: 200px;
+  background-color: rgba(17, 255, 0, 0.156);
+  text-align: center;
+  display: inline-block;
+}
+.bookimg{
+  width: 100px;
+  height: 150px;
+}
+.booktitle{
+  font-size: 10px;
+}

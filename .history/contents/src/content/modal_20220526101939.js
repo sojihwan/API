@@ -20,6 +20,7 @@ function Modal(props){
       }
   })
   }
+  console.log(props.id.thumbnailUrl.charAt(0)===null ? )
   return(
     <div>
       <div id="container">

@@ -38,15 +38,12 @@ function Select(){
     modal.style.display = "flex";
   }
   const onBef = async () => {
-    if(page === 1 ){
+    if(page === 0 ){
       alert("첫패이지 입니다");
-      const reponse = await axios.get(
-        `http://library.me.go.kr/pyxis-api/1/collections/1/search?all=k|a|library`
-      );
-      setApi(reponse.data)
       return 0;
     }
     setPage(page-1)
+    console.log(page)
     const reponse = await axios.get(
       `http://library.me.go.kr/pyxis-api/1/collections/${page}/search?all=k|a|library`
     );
@@ -57,6 +54,8 @@ function Select(){
       alert("마지막 페이지 입니다.")
       return 0
     }
+    if(page===0)
+    console.log(page)
     setPage(page+1)
     const reponse = await axios.get(
       `http://library.me.go.kr/pyxis-api/1/collections/${page}/search?all=k|a|library`

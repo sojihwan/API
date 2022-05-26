@@ -133,14 +133,14 @@
     color: white;
   }
   #ModalImg{
-    width: 150px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 20%;
   }
   .ModalText{
     position: fixed;
     left: 54%;
-    font-size: 14px;
+    font-size: 24px;
   }
   #author{
     top: 20%;

@@ -38,13 +38,12 @@ function Select(){
     modal.style.display = "flex";
   }
   const onBef = async () => {
-    if(page <= 1 ){
-      setPage(1)
+    if(page >= 1 ){
+      setPage(page-1)
       console.log(page)
       const reponse = await axios.get(
       `http://library.me.go.kr/pyxis-api/1/collections/${page}/search?all=k|a|library`
     );
-    setApi(reponse.data)
       alert("첫패이지 입니다");
       return 0;
     }

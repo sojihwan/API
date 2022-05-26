@@ -20,6 +20,7 @@ function Modal(props){
       }
   })
   }
+  console.log()
   return(
     <div>
       <div id="container">

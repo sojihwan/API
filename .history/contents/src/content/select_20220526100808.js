@@ -38,7 +38,7 @@ function Select(){
     modal.style.display = "flex";
   }
   const onBef = async () => {
-    if(page <= 1 ){
+    if(page >= 1 ){
       setPage(1)
       console.log(page)
       const reponse = await axios.get(

@@ -33,11 +33,7 @@ function Modal(props){
           <div className="close-area" onClick={Close}>X</div>
           
           <div className="content">
-            <img id="ModalImg" src={
-              props.id.thumbnailUrl ===null? 'img/null.jpg' : 
-              props.id.thumbnailUrl === undefined ? 'img/null.jpg' : 
-              props.id.thumbnailUrl 
-              }/>
+            <img id="ModalImg" src={props.id.thumbnailUrl !=null? props.id.thumbnailUrl: 'img/null.jpg'}/>
             <b id="author" className="ModalText">{props.id.author}</b>
             <b id="publication" className="ModalText">{props.id.publication}</b>
             <b id="similars" className="ModalText">{
@@ -45,6 +41,7 @@ function Modal(props){
             props.id.similars=== null ? "추천도서가 없습니다" : 
             props.id.similars=== [] ? "추천도서가 없습니다" : 
             props.id.similars.length=== 0 ? "추천도서가 없습니다" : 
+            props.id.similars[0].titleStatement.length >= 1 ? "추천도서가 없습니다" : 
             props.id.similars[0].titleStatement
             }<br/><br/>{
             props.id.similars===undefined? "추천도서가 없습니다" : 

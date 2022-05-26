@@ -140,7 +140,7 @@
   .ModalText{
     position: fixed;
     left: 54%;
-    font-size: 14px;
+    font-size: px;
   }
   #author{
     top: 20%;

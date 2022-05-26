@@ -20,6 +20,7 @@ function Modal(props){
       }
   })
   }
+  console.log(props.id.thumbnailUrl)
   return(
     <div>
       <div id="container">
@@ -35,7 +36,7 @@ function Modal(props){
           <div className="content">
             <img id="ModalImg" src={
               props.id.thumbnailUrl ===null? 'img/null.jpg' : 
-              props.id.thumbnailUrl === undefined ? 'img/null.jpg' : 
+              props.id.thumbnailUrl == "/attachments/biblio/thumbnails/b3ccc758-c0dc-4ea1-88df-3f1d8ae51cd3" ? 'img/null.jpg' : 
               props.id.thumbnailUrl 
               }/>
             <b id="author" className="ModalText">{props.id.author}</b>

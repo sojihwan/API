@@ -4,7 +4,7 @@ import "../css/Body.css"
 function Body(){
   return(
     <div className="Body">
-      <Booklist></Booklist>
+      <Select></Select>
     </div>
   );
 }

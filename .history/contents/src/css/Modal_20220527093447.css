@@ -32,17 +32,11 @@
   }
   #modal .title {
     padding-left: 10px;
-    width: 90%;
     display: inline;
     text-shadow: 1px 1px 2px gray;
     color: white;
     white-space : nowrap;
     overflow : hidden;
-    text-overflow : ellipsis;
-    word-wrap: break-word;
-        display: -webkit-box;
-        -webkit-line-clamp: 2 ;
-        -webkit-box-orient: vertical;
     
   }
   #modal .title h2 {
@@ -86,9 +80,6 @@
   }
 }
 @media ( max-width: 800px ) {
-  #modal.modal-overlay {
-    display: none;
-  }
   #modal .modal-window {
     background: rgba(197, 150, 69, 0.7);
     box-shadow: 0 8px 32px 0 rgba(135, 90, 31, 0.37);
@@ -99,23 +90,15 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 25%;
+    top: 30%;
     margin-right:10%;
     overflow: hidden;
   }
   #modal .title {
     padding-left: 10px;
     display: inline;
-    width: 90%;
     text-shadow: 1px 1px 2px gray;
     color: white;
-    white-space : nowrap;
-    overflow : hidden;
-    text-overflow : ellipsis;
-    word-wrap: break-word;
-        display: -webkit-box;
-        -webkit-line-clamp: 2 ;
-        -webkit-box-orient: vertical;
     
   }
   #modal .title h2 {
@@ -146,16 +129,16 @@
   .ModalText{
     position: fixed;
     left: 54%;
-    font-size: 12px;
+    font-size: 14px;
     overflow: hidden;
   }
   #author{
-    top: 10%;
-  }
-  #publication{
     top: 15%;
   }
-  #similars{
+  #publication{
     top: 20%;
+  }
+  #similars{
+    top: 30%;
   }
 }

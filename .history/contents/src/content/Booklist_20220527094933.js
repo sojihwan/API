@@ -83,12 +83,12 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
-              if(index===10){
+              if(index%10 === 0){
                 return(
                   <br/>
                 )
-                
               }
+              re
               return(
                 <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
                   <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}

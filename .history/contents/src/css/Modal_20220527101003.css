@@ -87,7 +87,7 @@
 }
 @media ( max-width: 800px ) {
   #modal.modal-overlay {
-    display: none;
+    
   }
   #modal .modal-window {
     background: rgba(197, 150, 69, 0.7);

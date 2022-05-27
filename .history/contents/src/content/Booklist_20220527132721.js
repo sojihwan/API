@@ -83,11 +83,11 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
-              if(index===10){
+              if(index%10 === 0){
                 return(
+                  
                   <br/>
                 )
-                
               }
               return(
                 <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>

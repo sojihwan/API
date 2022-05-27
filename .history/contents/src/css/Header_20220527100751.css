@@ -1,6 +1,6 @@
 @media ( max-width: 770px ) {
   .Header{
-    height: 25%;
+    height: 20%;
     background-color: rgba(195, 161, 126, 0.486);
     width: 100%;
     position: fixed;

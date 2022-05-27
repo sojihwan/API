@@ -1,0 +1,160 @@
+@media ( min-width: 770px ) {
+.img{
+  width: 100px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.408);
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+.bookimg{
+  width: 100px;
+  height: 150px;
+}
+.Hidden{
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+}
+.booktitle{
+  font-size: 5px;
+}
+.w-btn-green {
+  background-color: #4d3b2f;
+  color: #ffffff;
+}
+
+.w-btn-green2 {
+  background-color: #4b3a2f;
+  color: #ffffff;
+}
+
+.w-btn-green:hover {
+  background-color: #ffd8be;
+  color: #000000;
+  cursor: pointer;
+}
+
+.w-btn-green2:hover {
+  background-color: #ffe7d6;
+  color: #000000;
+}
+button{
+  width: 100px;
+  height: 60px;
+  font-size: 20px;
+  top: 85%;
+
+}
+.w-btn {
+  position: fixed;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 1s;
+}
+.w-btn-outline {
+  position: fixed;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 1s;
+}
+#B{
+  left: 10px;
+}
+#N{
+  right: 10px;
+}
+.taxt{
+  text-align: center;
+}
+}
+@media ( max-width: 770px ) {
+  .img{
+    width: 100px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.408);
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+  }
+  .bookimg{
+    width: 100px;
+    height: 150px;
+  }
+  .Hidden{
+    overflow: hidden;
+    width: 100px;
+    height: 30px;
+  }
+  .booktitle{
+    font-size: 5px;
+  }
+  .w-btn-green {
+    background-color: #4d3b2f;
+    color: #ffffff;
+  }
+  
+  .w-btn-green2 {
+    background-color: #4b3a2f;
+    color: #ffffff;
+  }
+  
+  .w-btn-green:hover {
+    background-color: #ffd8be;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .w-btn-green2:hover {
+    background-color: #ffe7d6;
+    color: #000000;
+  }
+  button{
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    top: 85%;
+  
+  }
+  .w-btn {
+    position: fixed;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 1s;
+  }
+  .w-btn-outline {
+    position: fixed;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 1s;
+  }
+  #B{
+    left: 10px;
+  }
+  #N{
+    right: 10px;
+  }
+  .taxt{
+    text-align: center;
+  }
+  }

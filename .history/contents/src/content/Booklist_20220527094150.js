@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React,{useState,useEffect} from "react";
 import axios from "axios";
-import "../css/Booklist.css"
+import "../css/.css"
 import Modal from "./Modal.js";
 
 function Select(){
@@ -83,14 +83,13 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
-              if(index===10){
+              if(index === 10){
                 return(
                   <br/>
                 )
-                
               }
               return(
-                <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
+                <div className="img" key={index} onClick={() => {idgive(api.data.list[index])}}>
                   <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}
                   /><br/>
                   <div className="Hidden">

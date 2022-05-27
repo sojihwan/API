@@ -1,10 +1,12 @@
 .img{
   width: 100px;
   height: 150px;
-  background-color: rgba(0, 0, 0, 0.408);
+  background-color: rgba(61, 152, 55, 0.408);
   text-align: center;
   display: inline-block;
   margin: 5px;
+  margin-left: 1.68%;
+  margin-right: 1.8%;
 }
 .bookimg{
   width: 100px;
@@ -35,7 +37,7 @@
 }
 
 .w-btn-green2:hover {
-  background-color: #cfbbae;
+  background-color: #866650;
   color: #9dc8c8;
 }
 button{
@@ -73,6 +75,6 @@ button{
 #N{
   right: 10px;
 }
-.taxt{
+.text{
   text-align: center;
 }

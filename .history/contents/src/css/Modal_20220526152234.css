@@ -58,8 +58,6 @@
   #ModalImg{
     width: 400px;
     height: 450px;
-    position: fixed;
-    left: 10px;
     border-radius: 20%;
   }
   .ModalText{
@@ -118,8 +116,7 @@
     color: white;
   }
   #ModalImg{
-    position: fixed;
-    left: 10px;
+    position: f;
     width: 150px;
     height: 250px;
     border-radius: 20%;

@@ -85,7 +85,7 @@ function Select(){
             api.data.list.map((item,index) => {
               if(index === 10){
                 return(
-                  <br/>
+                  <br></br>
                 )
               }
               return(

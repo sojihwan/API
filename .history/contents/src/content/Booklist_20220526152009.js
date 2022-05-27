@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 /* eslint-disable no-cond-assign */
 /* eslint-disable jsx-a11y/alt-text */
 import React,{useState,useEffect} from "react";
@@ -80,14 +81,9 @@ function Select(){
     setId(key)
   }
   return (
-    <div className="taxt">
+    <div className="taxt" style="text-align: center">
     {
             api.data.list.map((item,index) => {
-              if(index === 10){
-                return(
-                  <br/>
-                )
-              }
               return(
                 <div className="img" key={index} onClick={() => {idgive(api.data.list[index])}}>
                   <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}

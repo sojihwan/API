@@ -58,8 +58,6 @@
   #ModalImg{
     width: 400px;
     height: 450px;
-    position: fixed;
-    left: 10px;
     border-radius: 20%;
   }
   .ModalText{
@@ -118,8 +116,6 @@
     color: white;
   }
   #ModalImg{
-    position: fixed;
-    left: 10px;
     width: 150px;
     height: 250px;
     border-radius: 20%;
@@ -128,15 +124,14 @@
     position: fixed;
     left: 54%;
     font-size: 14px;
-    overflow: hidden;
   }
   #author{
-    top: 15%;
-  }
-  #publication{
     top: 20%;
   }
-  #similars{
+  #publication{
     top: 30%;
+  }
+  #similars{
+    top: 50%;
   }
 }

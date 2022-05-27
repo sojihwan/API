@@ -84,9 +84,7 @@ function Select(){
     {
             api.data.list.map((item,index) => {
               if(index === 10){
-                return(
-                  <br/>
-                )
+                re
               }
               return(
                 <div className="img" key={index} onClick={() => {idgive(api.data.list[index])}}>

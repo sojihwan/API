@@ -1,10 +1,10 @@
 @media ( max-width: 770px ) {
 .Body{
-  background-color: rgba(179, 142, 94, 0.819);
+  background-color: rgba(25, 134, 0, 0.819);
   position: fixed;
   top: 30%;
   left: 0px;
-  width: 100%;
+  width: 110%;
   height: 70%;
   overflow: auto;
 }

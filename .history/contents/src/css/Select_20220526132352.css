@@ -1,10 +1,12 @@
 .img{
   width: 100px;
   height: 150px;
-  background-color: rgba(0, 0, 0, 0.408);
+  background-color: rgba(61, 152, 55, 0.408);
   text-align: center;
   display: inline-block;
   margin: 5px;
+  margin-left: 1.68%;
+  margin-right: 1.%;
 }
 .bookimg{
   width: 100px;
@@ -19,23 +21,23 @@
   font-size: 5px;
 }
 .w-btn-green {
-  background-color: #866650;
+  background-color: #77af9c;
   color: #d7fff1;
 }
 
 .w-btn-green2 {
-  background-color: #866650;
+  background-color: #519d9e;
   color: #9dc8c8;
 }
 
 .w-btn-green:hover {
-  background-color: #d9b9a4;
+  background-color: #165b44;
   color: #d7fff1;
   cursor: pointer;
 }
 
 .w-btn-green2:hover {
-  background-color: #cfbbae;
+  background-color: #1c6f71;
   color: #9dc8c8;
 }
 button{
@@ -73,6 +75,6 @@ button{
 #N{
   right: 10px;
 }
-.taxt{
+.text{
   text-align: center;
 }

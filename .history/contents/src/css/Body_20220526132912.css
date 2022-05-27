@@ -1,17 +1,17 @@
 @media ( max-width: 770px ) {
 .Body{
-  background-color: rgba(179, 142, 94, 0.819);
+  background-color: rgba(25, 134, 0, 0.422);
   position: fixed;
   top: 30%;
   left: 0px;
-  width: 100%;
+  width: 110%;
   height: 70%;
   overflow: auto;
 }
 }
 @media ( min-width: 771px ) {
   .Body{
-    background-color: rgb(146, 114, 87);
+    background-color: rgba(120, 57, 1, 0.613);
     position: fixed;
     top: 30%;
     left: 0px;

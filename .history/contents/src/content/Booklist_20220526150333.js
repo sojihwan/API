@@ -1,4 +1,3 @@
-/* eslint-disable no-cond-assign */
 /* eslint-disable jsx-a11y/alt-text */
 import React,{useState,useEffect} from "react";
 import axios from "axios";
@@ -40,8 +39,8 @@ function Select(){
   }
   const onBef = async () => {
     const modal = document.getElementById("modal");
-    if(modal.style.display === "flex"){
-      alert("모달장을 닫아주세요");
+    if(modal.style.display = "flex"){
+      a
     }
     if(page <= 1 ){
       setPage(1)
@@ -61,10 +60,6 @@ function Select(){
     setApi(reponse.data)
   }
   const onNaxt = async () => {
-    const modal = document.getElementById("modal");
-    if(modal.style.display === "flex"){
-      alert("모달장을 닫아주세요");
-    }
     if(page===9){
       alert("마지막 페이지 입니다.")
       return 0
@@ -83,11 +78,6 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
-              if(index === 10){
-                return(
-                  <br/>
-                )
-              }
               return(
                 <div className="img" key={index} onClick={() => {idgive(api.data.list[index])}}>
                   <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}

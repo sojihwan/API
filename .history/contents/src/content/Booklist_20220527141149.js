@@ -83,6 +83,23 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
+            if(index===10){
+              return(
+                <br/>
+              )
+            }
+            if(index===11){
+              return(
+                  <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index-1])}}>
+                    <img className="bookimg" onClick={model} src={(api.data.list[index-1].thumbnailUrl != null)?api.data.list[index-1].thumbnailUrl:'img/ddd.jpg'}
+                    /><br/>
+                    <div className="Hidden">
+                    <b className="booktitle">{api.data.list[index-1].titleStatement}</b>
+                    </div>
+                    <br/>
+                  </div>
+              )
+            }
             return(
               <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
               <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}

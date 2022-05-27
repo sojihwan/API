@@ -83,21 +83,32 @@ function Select(){
     <div className="taxt">
     {
             api.data.list.map((item,index) => {
-            return(
-              <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
-              <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}
-              /><br/>
-              <div className="Hidden">
-              <b className="booktitle">{api.data.list[index].titleStatement}</b>
+              if(index<=10){
+                return(
+                  <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
+                  <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}
+                  /><br/>
+                  <div className="Hidden">
+                  <b className="booktitle">{api.data.list[index].titleStatement}</b>
+                  </div>
+                </div>
+              );
+            }
+              return(
+                <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
+                <img className="bookimg" onClick={model} src={(api.data.list[index].thumbnailUrl != null)?api.data.list[index].thumbnailUrl:'img/ddd.jpg'}
+                /><br/>
+                <div className="Hidden">
+                <b className="booktitle">{api.data.list[index].titleStatement}</b>
+                </div>
               </div>
-            </div>
-          )
-        }
-      )
-    }
-    <Modal id={id}/>
-    <button id="B" className="w-btn w-btn-green" onClick={onBef} type="button">이전</button>
-    <button id="N" className="w-btn w-btn-green" onClick={onNaxt} type="button">다음</button>    
+            )
+              }
+            )}
+          <Modal id={id}/>
+        <button id="B" className="w-btn w-btn-green" onClick={onBef} type="button">이전</button>
+        <button id="N" className="w-btn w-btn-green" onClick={onNaxt} type="button">다음</button>
+        
   </div>
 )
 }

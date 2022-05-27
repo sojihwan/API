@@ -92,6 +92,15 @@ function Select(){
               </div>
             </div>
           )
+          {
+            () => {
+              if(index === 11){
+                return(
+                  <br/>
+                )
+              }
+            }
+          }
         }
       )
     }

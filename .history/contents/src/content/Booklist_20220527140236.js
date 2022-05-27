@@ -92,6 +92,9 @@ function Select(){
               </div>
             </div>
           )
+          if(index===9){
+            <br</br>
+          }
         }
       )
     }

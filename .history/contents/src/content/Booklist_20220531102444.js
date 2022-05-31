@@ -86,10 +86,10 @@ function Select(){
             return(
               // api.data.list[index].thumbnailUrl:
               <div key={item.id} className="img" onClick={() => {idgive(api.data.list[index])}}>
-                <img className="bookimg" onClick={model} src={
-                  api.data.list[index].thumbnailUrl != null? 
-                  api.data.list[index].thumbnailUrl.startsWith('http')?api.data.list[index].thumbnailUrl:'img/ddd.jpg':
-                  'img/ddd.jpg'
+              <img className="bookimg" onClick={model} src={
+                api.data.list[index].thumbnailUrl != null? 
+                api.data.list[index].thumbnailUrl.startsWith('http')?api.data.list[index].thumbnailUrl:'img/ddd.jpg':
+                'img/ddd.jpg'
               }
               /><br/>
               <div className="Hidden">
